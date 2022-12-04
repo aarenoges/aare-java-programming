@@ -1,3 +1,5 @@
+package javaonline.basics;
+
 public class ArrayDemo {
     public static void main(String[] args) {
         String[][] seasons = {

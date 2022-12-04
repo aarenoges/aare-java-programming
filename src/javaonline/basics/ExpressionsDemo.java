@@ -1,3 +1,5 @@
+package javaonline.basics;
+
 public class ExpressionsDemo {
 
     public static void main(String[] args) {

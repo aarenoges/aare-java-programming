@@ -1,3 +1,5 @@
+package javaonline.basics;
+
 public class PrimitiveTypeDemo {
 
     public static void main(String[] args) {

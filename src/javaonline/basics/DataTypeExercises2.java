@@ -1,3 +1,5 @@
+package javaonline.basics;
+
 public class DataTypeExercises2 {
     public static void main(String[] args) {
 

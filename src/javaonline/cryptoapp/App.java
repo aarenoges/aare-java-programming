@@ -15,6 +15,7 @@ public class App {
                 // olukorra lahendamise main meetodile: Add exception to method signature
       //  System.out.println(lines);
         // "A, Ü", "B, Ö" jne
+
         // VÕTI ON MATI ALL
         // V --> F, Õ --> D jne
 
@@ -25,12 +26,12 @@ public class App {
             converterMap.put(lineParts[0], lineParts[1]);
         }
 
-       // System.out.println(converterMap); // mapis jrk võib muutuda, kuid paarid on samad
+       // System.out.println(converterMap.get("B")); // mapis jrk võib muutuda, kuid paarid on samad
 
         // VÕTI ON MATI ALL
         // V --> F, Õ --> D jne
-        String message = args[0];
-        String[] messageChars = message.split("");
+        String message = args[0]; // message: "VÕTI ON MATI ALL"  args: { "VÕTI ON MATI ALL"}
+        String[] messageChars = message.split(""); // saame messageChars: { "V", "Õ", "T", "I", " ", + 11}
         String encryptedMessage = "";
 
         for (String messageChar : messageChars) {

@@ -10,6 +10,7 @@ public class OopBasics {
              Eesti       31038          1328976
              Saksamaa    3863344        83149300
          */
+//  Selleks, et luua andmemudel, kuhu tahan panna informatsiooni nende riikide kohta, tekitame uue Klassi: Country
 
         Country australia = new Country("Austraalia", 1376255, 25725000);
 //        australia.name = "Australia";

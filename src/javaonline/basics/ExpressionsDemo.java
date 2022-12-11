@@ -14,10 +14,10 @@ public class ExpressionsDemo {
         int d = 19;
         d++; // 20
         System.out.println(d);
-        int e = ++d; // e = ?
+        int e = ++d; // e = ? -> e = 21; kui oleks e = d++, siis e = 20 ja seejärel suurendatakse d sisemist väärtust
         System.out.println(e);
         System.out.println(d);
-        int f = d--; // 21
+        int f = d--; // f = 21 ehk f-le omistatakse d väärtus 21 ja seejärel vähendatakse d sisemist väärtust; d = 20
         System.out.println(f);
         System.out.println(d);
         int g = d++ - 4;
@@ -39,7 +39,7 @@ public class ExpressionsDemo {
         System.out.println(d);
 
         int i = 97;
-        i = i % 10;
+        i = i % 10; // jäägiga jagamine ja i = 7
         System.out.println(i);
 
         // Tingimuslikud avaldised ja operaatorid
@@ -47,18 +47,22 @@ public class ExpressionsDemo {
         int myNum2 = 5;
         int myNum3 = 6;;
 
-        System.out.println(myNum1 == myNum2);
+        System.out.println(myNum1 == myNum2); // true
         boolean areEqual = myNum1 == myNum2;
         System.out.println(areEqual);
-        boolean areNotEqual = myNum1 != myNum3;
+        boolean areNotEqual = myNum1 != myNum3; // true
         System.out.println(areNotEqual);
-        boolean isGreater = myNum1 > myNum3;
+        boolean isGreater = myNum1 > myNum3; // false
         System.out.println(isGreater);
 
+        // Loogilised avaldised ||: Logical OR ehk loogiline liitmine
+        // true || false = true; true || true = true; false || false = false
+
         // Loogilised avaldised &&: Logical AND ehk loogiline korrutamine
-        System.out.println(true && false);
-        System.out.println(true && true);
-        System.out.println(false && false);
+        System.out.println(true && false); // false
+        System.out.println(true && true);  // true
+        System.out.println(false && false);// false
+
         // ! Logical NOT ehk loogilise avaldise ümberpööramine
         System.out.println(true && !false); // true && true
         int l = 5;

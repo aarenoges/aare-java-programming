@@ -14,7 +14,7 @@ public class MethodDemo {
         System.out.println("Iskukoodi omaniku sünniaasta: " + deriveBirthYear(personalCode));
     }
 
-    private static int tripleNumber(int number) {
+    private static int tripleNumber(int number) {  // funktsiooni nimi võiks olla käskivas kõneviisis
         int result = 3 * number;
         return result;
     }
@@ -30,7 +30,7 @@ public class MethodDemo {
 
     private  static int deriveBirthYear(String personalCode) { // "49403136526" --> 1994
         String firstDigitString = String.valueOf(personalCode.charAt(0)); // "4"
-        String birthYearDigitsString = personalCode.substring(1, 3); // "94"
+        String birthYearDigitsString = personalCode.substring(1, 3); // "94" ;(1, 3) tähendab alates 1-st kuni 3(mitte)
         int birthYearDigits = Integer.parseInt(birthYearDigitsString); // "94" --> 94
 
         switch (firstDigitString) {

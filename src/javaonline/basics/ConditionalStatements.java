@@ -16,8 +16,15 @@ public class ConditionalStatements {
             System.out.println("On jaanipäev!");
         }
 
-        // Tingimustehe (kasuta siis, kui on lihtne konstruktsioon, vastasel korral kasuta if-else
+        // Tingimustehe Inline-if:(kasuta siis, kui on lihtne konstruktsioon, vastasel korral kasuta if-else
         String isWarm = temperature > 23 ? "jah" : "ei";
+        System.out.println(isWarm);
+        // sama asi if-else konstruktsiooniga:
+        if (temperature > 23){
+            isWarm = "jah";
+        } else {
+            isWarm = "ei";
+        }
         System.out.println(isWarm);
 
         // switch kasuta siis, kui on piiratud arv võimalusi, võid teha ka if-elsega
@@ -35,6 +42,7 @@ public class ConditionalStatements {
             default:
                 System.out.println("Lights are broken, be careful!");
         }
+        // eelnev switch statement if-else konstruktsiooniga:
 
         if (trafficLightColor.equals("red")) {
             System.out.println("Please stop!");

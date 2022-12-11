@@ -8,7 +8,7 @@ public class ArrayDemo {
                 {"Sügis", "Pruun"},
                 {"Talv", "Valge"}
         };
-        seasons[1][1] = "Kollane";
-        System.out.println(seasons[1][1]);
+        seasons[1][1] = "Kollane"; // tahan massiivi sees olevat väärtust muuta, et Suvi -> Kollane
+        System.out.println(seasons[1][1]); // Kollane
     }
 }

@@ -32,10 +32,10 @@ public class PrimitiveTypeDemo {
         float myAnotherPiValue = 3.14159F;
 
         // char
-        char myChar1 = 'b';
-        System.out.println((short)myChar1);
-        System.out.println((char) 99);
-        System.out.println((short)'1');
+        char myChar1 = 'b';  // peab kasutama ühekordseid jutumärke
+        System.out.println((short)myChar1); // b -> 98
+        System.out.println((char) 99); // 99 -> c
+        System.out.println((short)'1'); // '1' -> 49;  '0' -> 48 ehk et sümbol 0 arvuline väärtus ei ole 0, vaid 48
 
         // boolean
         boolean isValid = false;
